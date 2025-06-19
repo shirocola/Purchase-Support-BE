@@ -34,10 +34,20 @@ This project uses Copilot Coding Agent for code generation and automation. Pleas
 ## Acceptance Criteria
 - Each feature/task must have clear Acceptance Criteria before implementation.
 
+## API Specification & Documentation
+- All REST API endpoints must be documented using OpenAPI (Swagger) specification.
+- The OpenAPI spec file should be maintained at `openapi.yaml` or `docs/openapi.yaml`.
+- Integrate Swagger UI (e.g., `swagger-ui-express`) to serve interactive documentation at `/api-docs`.
+- Update the API spec whenever new endpoints are added or changed.
+- Example requests, responses, enums, and error codes must match the actual implementation and Prisma schema.
+- Document authentication methods (OAuth2/Azure AD) and all required headers or tokens.
+- Reference the OpenAPI spec in the project README and keep it up-to-date.
+
 ## Example Acceptance Criteria
 - API endpoint created with validation and error handling.
 - Unit tests included and passing.
 - All business rules implemented as described.
+- API endpoint is documented and visible in Swagger UI.
 
 ## Security
 - Validate all inputs.
