@@ -43,6 +43,12 @@ This project uses Copilot Coding Agent for code generation and automation. Pleas
 - Document authentication methods (OAuth2/Azure AD) and all required headers or tokens.
 - Reference the OpenAPI spec in the project README and keep it up-to-date.
 
+## Branch Naming Convention
+- Use the format `feature/<short-description>` for new features.
+- Use `fix/<short-description>` for bug fixes.
+- The <short-description> should be kebab-case, concise, and reflect the task (e.g., `feature/po-email-tracking`, `feature/prisma-schema-init`).
+- Always create a new branch for each task.
+
 ## Example Acceptance Criteria
 - API endpoint created with validation and error handling.
 - Unit tests included and passing.
